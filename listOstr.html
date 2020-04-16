@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отбор</title>
+</head>
+<body>
+<h1>Список профессий?</h1>
+{% set user_list = ['Климатолог', 'Штурман', 'Киберинженер', 'Метеоролог', 'астрогеолог', 'врач', 'экзогеолог', 'гляциолог'] %} 
+<{{res}}>
+        {% for user in user_list %}
+        <li> {{ user }}
+        </li>
+        {% endfor %}
+</{{res}}>
+</body>
+</html>
